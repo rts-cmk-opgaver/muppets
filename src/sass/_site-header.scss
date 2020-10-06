@@ -1,0 +1,8 @@
+.siteHeader{
+    display: grid;
+    grid-template-columns: minmax(5em, auto) 1fr 1fr minmax(5em, auto);
+    grid-template-rows: minmax(2, 1fr);
+    grid-template: 
+    ". primaryMenu searchForm ."
+    ". logo secondaryMenu .";
+}
