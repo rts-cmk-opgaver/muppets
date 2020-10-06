@@ -1,0 +1,13 @@
+.primaryMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__link{
+        color: $secondaryColor;
+        text-decoration: none;
+        font-family: $primaryFontStack;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1em;
+    }
+}
