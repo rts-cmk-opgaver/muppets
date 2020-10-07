@@ -1,5 +1,5 @@
 .searchForm{
-    grid-area: searchForm;
+    grid-column: 3/4;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -8,7 +8,11 @@
         border: 1px solid #757575;
         border-right: none;
         background-color: #F5F5F5;
-        padding: 0.5em 0.75em;
+        padding: 0.76em 1em;
+        font-size: 0.8em;
+        width: 100%;
+        max-width: 278px;
+        height: 40px;
         &::placeholder{
             color: #707070;
         }
@@ -18,7 +22,9 @@
         border: 1px solid #757575;
         border-left: none;
         background-color: #FFF;
-        padding: 0.5em 0.75em;
+        padding: 0 0.8em;
         color: #007ebd;
+        font-size: 1em;
+        height: 40px;
     }
 }
