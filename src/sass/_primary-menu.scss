@@ -1,5 +1,5 @@
 .primaryMenu{
-    grid-area: primaryMenu;
+    grid-column: 2/3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,6 +9,9 @@
         font-family: $primaryFontStack;
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 1em;
+        font-size: 0.9em;
+    }
+    &__logo{
+        max-width: 95px;
     }
 }
