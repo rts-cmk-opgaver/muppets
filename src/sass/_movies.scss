@@ -1,0 +1,36 @@
+.movies{
+    overflow: hidden;
+    margin: 5em 0;
+    h2{
+        font-family: $primaryFontStack;
+        margin: 1em 0 1em 52px;
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+    }
+    &__slider{
+        display: flex;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    &__link{
+        margin-right: 1em;
+        &:last-of-type{
+            margin-right: 0;
+        }
+    }
+    &__poster{
+        width: 210px;
+        border-radius: 2px;
+        border: 1px solid #EEE;
+    }
+    &__arrows{
+        font-size: 2em;
+        padding: 0.5em;
+    }
+}
