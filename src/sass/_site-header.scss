@@ -1,6 +1,6 @@
 .siteHeader{
     display: grid;
-    grid-template-columns: minmax(1em, auto) 1fr 1fr minmax(1em, auto);
+    grid-template-columns: minmax(1em, auto) auto 1fr minmax(1em, auto);
     padding-top: 1em;
     max-width: 1600px;
     margin: 0 auto;

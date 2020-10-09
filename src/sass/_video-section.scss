@@ -36,6 +36,7 @@
         background-color: #F4F4F4;
         border-bottom: 1px solid #E0E0E0;
         cursor: pointer;
+        border-right: 0px solid blue;
         transition: all 0.3s linear;
         &.--active{
             border-right: 4px solid blue;
@@ -44,6 +45,7 @@
         &:hover{
             border-right: 4px solid blue;
             background-color: #FFFFFF;
+            transition: all 0.3s linear;
         }
         &:last-child{
             border-bottom: none;
@@ -77,5 +79,20 @@
         font-size: 0.85em;
         font-family: $primaryFontStack;
         text-transform: capitalize;
+    }
+}
+@media only screen and (max-width: 880px) {
+    .videoSection{
+        grid-template-columns: 1fr;
+        margin: 0;
+        &__videoContainer{
+            height: 270px;
+        }
+        &__playlist{
+            height: 225px;
+        }
+        &__videoPlayer{
+            height: auto;
+        }
     }
 }

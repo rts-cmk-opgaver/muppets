@@ -21,6 +21,7 @@
     }
     &__img{
         margin-right: 1.5em;
+        width: 100%;
         max-width: 125px;
         height: 162px;
         border-radius: 6px;
@@ -30,4 +31,38 @@
         font-size: 1.4em;
         font-family: $primaryFontStack;
     }
+}
+@media only screen and (max-width: 700px) {
+    .meetTeam{
+        margin: 0 1% 4em;
+        &__character{
+            margin: 0 !important;
+        }
+        h2{
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 3em;
+        }
+        &__character{
+            flex-direction: column;
+            text-align: center;
+            img{
+                margin: 0 auto;
+            }
+            h3{
+                font-size: 1em;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 300px) {
+    .meetTeam__grid{
+        display: block;
+        img{
+            margin: 0 auto;
+            height: auto;
+            max-width: 200px;
+        }
+    }
+    
 }

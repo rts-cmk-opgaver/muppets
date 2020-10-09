@@ -1,8 +1,11 @@
 .primaryMenu{
     grid-column: 2/3;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    &__container{
+        display: flex;
+        align-items: center;
+    }
     &__link{
         color: $secondaryColor;
         text-decoration: none;
@@ -10,8 +13,118 @@
         text-transform: uppercase;
         font-weight: 700;
         font-size: 0.9em;
+        padding: 0.2em 1em;
+        &:hover{
+            color: #0077DA;
+        }
     }
     &__logo{
+        width: 100%;
         max-width: 95px;
+    }
+    &__nav{
+        position: relative;
+        cursor: pointer;
+        &:hover .dropdownContent {
+            display: flex;
+        }
+    }
+    .dropdownContent{
+        z-index: 3;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        left: -10px;
+        min-width: 150px;
+        background-color: #232b2d;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 15px 10px;
+        .primaryMenu__link{
+            color: #FFF;
+            text-transform: capitalize;
+            &:hover{
+                color: #0077DA;
+            }
+        }
+    }
+}
+.burgerMenu, .searchMenu{
+    display: none;
+}
+.dropdown1, .dropdown2{
+    display: none;
+}
+.primaryMenu__container{
+    &.--active{
+        display: flex !important;
+    }
+}
+@media only screen and (max-width: 880px) {
+    .primaryMenu1{
+        display: none;
+    }
+    .dropdown1{
+        display: block;
+    }
+}
+@media only screen and (max-width: 830px) {
+    .primaryMenu2{
+        display: none;
+    }
+    .dropdown2{
+        display: block;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .burgerMenu, .searchMenu{
+        display: block;
+    }
+    .primaryMenu__container{
+        display: none;
+    }
+    .primaryMenu{
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: column;
+        &__link{
+            align-self: flex-start;
+            margin: 1.2em 1em;
+            padding: 0 1%;
+        }
+        &__mobile{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 1%;
+            width: 100%;
+            border-bottom: 1px solid #000;
+        }
+        &__nav{
+            align-self: flex-start;
+            & a:first-of-type{
+                display: none;
+            }
+        }
+        .dropdownContent{
+            position: static;
+            display: flex;
+            background-color: #FFF;
+            box-shadow: none;
+            color: #000;
+            max-width: 640px;
+            padding: 0;
+            .primaryMenu__link{
+                color: #000;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .primaryMenu__container{
+        grid-column: 2/4;
+        grid-row: 2/3;
+        flex-direction: column;
+        width: 100%;
     }
 }
