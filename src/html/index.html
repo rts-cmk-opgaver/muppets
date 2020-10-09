@@ -3,10 +3,220 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
 	<link rel="stylesheet" href="/assets/css/style.css">
+	<title>Muppets</title>
 </head>
 <body>
-	<div class="circle"></div>
+	<header class="siteHeader">
+		<nav class="primaryMenu">
+			<div class="primaryMenu__mobile">
+				<div class="burgerMenu"><i class="fas fa-grip-lines"></i></div>
+				<a href="" class="primaryMenu__link"><img src="/assets/images/disney_logo.png" alt="disney logo" class="primaryMenu__logo"></a>
+				<div class="searchMenu"><i class="fas fa-search"></i></div>
+			</div>
+			<div class="primaryMenu__container">
+				<a href="" class="primaryMenu__link">disney+</a>
+				<a href="" class="primaryMenu__link">shop</a>
+				<a href="" class="primaryMenu__link primaryMenu2">parks &amp; travel</a>
+				<a href="" class="primaryMenu__link primaryMenu1">movies</a>
+			
+				<div class="primaryMenu__nav">
+					<a class="primaryMenu__link">more</a>
+					<div class="dropdownContent">
+						<a href="" class="primaryMenu__link dropdown2">parks &amp; travel</a>
+						<a href="" class="primaryMenu__link dropdown1">movies</a>
+						<a href="" class="primaryMenu__link">disney news</a>
+						<a href="" class="primaryMenu__link">family</a>
+						<a href="" class="primaryMenu__link">live shows</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<form action="" class="searchForm">
+			<input type="search" name="keyword" placeholder="Search" class="searchForm__input">
+			<button type="submit" class="searchForm__submitButton"><i class="fas fa-search"></i></button>
+		</form>
+		<nav class="secondaryMenu">
+			<a href=""><img src="/assets/images/muppets_logo.webp" alt="muppets logo" class="secondaryMenu__logo"></a>
+			<div class="secondaryMenu__menu">
+				<div class="secondaryMenu__dropdown secondaryMenu__nav">
+					<a class="secondaryMenu__link">movies</a>
+					<i class="fas fa-chevron-down secondaryMenu__arrow"></i>
+					<div class="dropdownContent">
+						<a href="" class="dropdownContent__link">Muppets Most Wanted</a>
+						<a href="" class="dropdownContent__link">A Muppets Christmas: Letters to Santa</a>
+						<a href="" class="dropdownContent__link">The Muppets' Wizard of Oz</a>
+						<a href="" class="dropdownContent__link">Muppet Treasure Island</a>
+						<a href="" class="dropdownContent__link">The Muppet Christmas Carol</a>
+						<a href="" class="dropdownContent__link">The Great Muppet Caper</a>
+						<a href="" class="dropdownContent__link">The Muppet Movie (1979)</a>
+					</div>
+				</div>
+				<div class="secondaryMenu__nav">
+					<a href="" class="secondaryMenu__link">shop</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section class="mainHero">
+			<img src="/assets/images/hero.jpg" alt="kermit and miss piggy" class="mainHero__img">
+			<div class="mainHero__title">
+				<img src="/assets/images/muppets_hero_title.png" alt="" class="mainHero__imgTitle">
+				<p class="mainHero__description">Classic Muppets, new unscripted mayhem! Watch Muppets Now on Disney+.</p>
+				<a href="" class="mainHero__button">Stream Now</a>
+			</div>
+		</section>
+		<section class="videoSection">
+			<video class="videoSection__videoPlayer" controls>
+				<source src="" type="video/mp4">
+			  	Your browser does not support the video tag.
+			  </video>
+			<div class="videoSection__videoContainer">
+				<p class="videoSection__upNext">up next</p>
+				<div class="videoSection__playlist">
+					<div class="videoSection__nextVideo --active">
+						<div class="videoSection__video">
+							<img src="https://via.placeholder.com/132x74" alt="" class="videoSection__poster">
+							<i class="far fa-play-circle"></i>
+						</div>
+						<p class="videoSection__title">The Muppets Video Call | Muppets Now | Disney+</p>
+					</div>
+					<div class="videoSection__nextVideo">
+						<div class="videoSection__video">
+							<img src="https://via.placeholder.com/132x74" alt="" class="videoSection__poster">
+							<i class="far fa-play-circle"></i>
+						</div>
+						<p class="videoSection__title">Muppets Now | Official Trailer | Disney+</p>
+					</div>
+					<div class="videoSection__nextVideo">
+						<div class="videoSection__video">
+							<img src="https://via.placeholder.com/132x74" alt="" class="videoSection__poster">
+							<i class="far fa-play-circle"></i>
+						</div>
+						<p class="videoSection__title">The Muppets Recreate a Classic Tune</p>
+					</div>
+					<div class="videoSection__nextVideo">
+						<div class="videoSection__video">
+							<img src="https://via.placeholder.com/132x74" alt="" class="videoSection__poster">
+							<i class="far fa-play-circle"></i>
+						</div>
+						<p class="videoSection__title">Wocka Wocka This Way</p>
+					</div>
+					<div class="videoSection__nextVideo">
+						<div class="videoSection__video">
+							<img src="https://via.placeholder.com/132x74" alt="" class="videoSection__poster">
+							<i class="far fa-play-circle"></i>
+						</div>
+						<p class="videoSection__title">Why...This...Takes...So.....Long.</p>
+					</div>
+					<div class="videoSection__nextVideo">
+						<div class="videoSection__video">
+							<img src="https://via.placeholder.com/132x74" alt="" class="videoSection__poster">
+							<i class="far fa-play-circle"></i>
+						</div>
+						<p class="videoSection__title">Why Not a Whatnot</p>
+					</div>
+					<div class="videoSection__nextVideo">
+						<div class="videoSection__video">
+							<img src="https://via.placeholder.com/132x74" alt="" class="videoSection__poster">
+							<i class="far fa-play-circle"></i>
+						</div>
+						<p class="videoSection__title">What Floor?</p>
+					</div>
+					<div class="videoSection__nextVideo">
+						<div class="videoSection__video">
+							<img src="https://via.placeholder.com/132x74" alt="" class="videoSection__poster">
+							<i class="far fa-play-circle"></i>
+						</div>
+						<p class="videoSection__title">We Wish You a Merry Chrismas - Clip - The Muppet Christmas Carol</p>
+					</div>
+					<div class="videoSection__nextVideo">
+						<div class="videoSection__video">
+							<img src="https://via.placeholder.com/132x74" alt="" class="videoSection__poster">
+							<i class="far fa-play-circle"></i>
+						</div>
+						<p class="videoSection__title">We Picked Up a Weirdo - Clip - The Muppet Movie</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="meetTeam">
+			<h2>Meet The Muppets</h2>
+			<div class="meetTeam__grid">
+				<div class="meetTeam__character">
+					<img class="meetTeam__img" src="/assets/images/kermit.webp" alt="image of kermit">
+					<h3 class="meetTeam__name">Kermit The Frog</h3>
+				</div>
+				<div class="meetTeam__character">
+					<img class="meetTeam__img" src="/assets/images/kermit.webp" alt="image of Miss Piggy">
+					<h3 class="meetTeam__name">Miss Piggy</h3>
+				</div>
+				<div class="meetTeam__character">
+					<img class="meetTeam__img" src="/assets/images/kermit.webp" alt="image of Frozzie Bear">
+					<h3 class="meetTeam__name">Frozzie Bear</h3>
+				</div>
+				<div class="meetTeam__character">
+					<img class="meetTeam__img" src="/assets/images/kermit.webp" alt="image of Gonzo The Great">
+					<h3 class="meetTeam__name">Gonzo The Great</h3>
+				</div>
+				<div class="meetTeam__character">
+					<img class="meetTeam__img" src="/assets/images/kermit.webp" alt="image of Animal">
+					<h3 class="meetTeam__name">Animal</h3>
+				</div>
+				<div class="meetTeam__character">
+					<img class="meetTeam__img" src="/assets/images/kermit.webp" alt="image of Pepe the Prawn">
+					<h3 class="meetTeam__name">Pepe the Prawn</h3>
+				</div>
+			</div>
+		</section>
+		<section class="movies">
+			<h2>It's Time to Start the Movies</h2>
+			<div class="movies__container">
+				<i class="fas fa-chevron-left movies__arrows"></i>
+				<div class="movies__slider">
+					<a href="" class="movies__link"><img src="/assets/images/movie.webp" class="movies__poster" alt=""></a>
+					<a href="" class="movies__link"><img src="/assets/images/movie.webp" class="movies__poster" alt=""></a>
+					<a href="" class="movies__link"><img src="/assets/images/movie.webp" class="movies__poster" alt=""></a>
+					<a href="" class="movies__link"><img src="/assets/images/movie.webp" class="movies__poster" alt=""></a>
+					<a href="" class="movies__link"><img src="/assets/images/movie.webp" class="movies__poster" alt=""></a>
+					<a href="" class="movies__link"><img src="/assets/images/movie.webp" class="movies__poster" alt=""></a>
+					<a href="" class="movies__link"><img src="/assets/images/movie.webp" class="movies__poster" alt=""></a>
+					<a href="" class="movies__link"><img src="/assets/images/movie.webp" class="movies__poster" alt=""></a>
+				</div>
+				<i class="fas fa-chevron-right movies__arrows"></i>
+			</div>
+		</section>
+	</main>
+	<footer class="siteFooter">
+		<p class="siteFooter__visitUs">Visit Us At</p>
+		<div class="siteFooter__socials">
+			<a href="" class="siteFooter__facebook"><i class="fab fa-facebook-f"></i></a>
+			<a href="" class="siteFooter__twitter"><i class="fab fa-twitter"></i></a>
+			<a href="" class="siteFooter__instagram"><i class="fab fa-instagram"></i></a>
+			<a href="" class="siteFooter__youtube"><i class="fab fa-youtube"></i></a>
+		</div>
+		<img class="siteFooter__logo" src="/assets/images/disney_logo.png" alt="disney logo">
+		<div class="siteFooter__links">
+			<a href="">About disney</a>
+			<a href="">disney help</a>
+			<a href="">careers</a>
+			<a href="">contact us</a>
+			<a href="">advertise with us</a>
+			<a href="">disney&#174; premier visa&#174; card</a>
+		</div>
+		<div class="siteFooter__policys">
+			<a href="">terms of use</a>
+			<a href="">additional content information</a>
+			<a href="">privacy policy</a>
+			<a href="">your california privacy rights</a>
+			<a href="">children's online privacy policy</a>
+			<a href="">interest-based ads</a>
+			<a href="">do not sell my info</a>
+		</div>
+		<p class="siteFooter__copyright">&copy; Disney, All Rights Reserved</p>
+	</footer>
+	<script src="/assets/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,44 @@
+.searchForm{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &__input{
+        border-radius: 5px 0 0 5px;
+        border: 1px solid #757575;
+        border-right: none;
+        background-color: #F5F5F5;
+        padding: 0.76em 1em;
+        font-size: 0.8em;
+        width: 100%;
+        max-width: 278px;
+        height: 40px;
+        &::placeholder{
+            color: #707070;
+        }
+    }
+    &__submitButton{
+        border-radius: 0 5px 5px 0;
+        border: 1px solid #757575;
+        border-left: none;
+        background-color: #FFF;
+        padding: 0 0.8em;
+        color: #007ebd;
+        font-size: 1em;
+        height: 40px;
+    }
+    &.--active{
+        display: flex;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .searchForm{
+        display: none;
+        margin-top: 1em;
+        grid-row: 2/3;
+        grid-column: 2/4;
+        &__input{
+            max-width: 640px;
+        }
+    }
+}

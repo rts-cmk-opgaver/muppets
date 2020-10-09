@@ -1,0 +1,70 @@
+.movies{
+    overflow: hidden;
+    margin: 5em 0;
+    h2{
+        font-family: $primaryFontStack;
+        margin: 1em 0 1em 52px;
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+    }
+    &__slider{
+        display: flex;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    &__link{
+        margin-right: 1em;
+        &:last-of-type{
+            margin-right: 0;
+        }
+    }
+    &__poster{
+        width: 210px;
+        border-radius: 2px;
+        border: 1px solid #EEE;
+    }
+    &__arrows{
+        font-size: 2em;
+        padding: 0.5em;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .movies{
+        h2{
+            margin: 1em 0;
+            font-size: 1.2em;
+            text-align: center;
+        }
+        &__poster{
+            width: 180px;
+        }
+        &__arrows{
+            font-size: 2em;
+            padding: 0 0.2em;
+        }
+    }
+}
+@media only screen and (max-width: 400px) {
+    .movies{
+        &__container{
+            display: grid;
+        }
+        &__arrows{
+            grid-row: 2/3;
+            grid-column: 1/2;
+            text-align: center;
+            &:first-of-type{
+                padding-right: 1em;
+            }
+            &:last-of-type{
+                padding-left: 1em;
+            }
+        }
+    }
+}

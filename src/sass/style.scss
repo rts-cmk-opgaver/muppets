@@ -1,10 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    max-width: 1024px;
+    margin: 0 auto;
+}
 @import "variables";
+@import "primary-menu";
+@import "search-form";
+@import "secondary-menu";
+@import "site-header";
 
-body {
-	background-color: $primaryColor;
-}
-
-.circle {
-	border-radius: 50%;
-	box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
-}
+@import "main-hero";
+@import "video-section";
+@import "meet-team";
+@import "movies";
+@import "site-footer";
